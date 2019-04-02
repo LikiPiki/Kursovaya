@@ -1,0 +1,10 @@
+#ifndef CURSOVAYA_COMPUTERFACTORY_H
+#define CURSOVAYA_COMPUTERFACTORY_H
+
+
+class ComputerFactory {
+
+};
+
+
+#endif //CURSOVAYA_COMPUTERFACTORY_H
