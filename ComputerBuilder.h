@@ -18,9 +18,14 @@ class ComputerBuilder {
     string audioBoard;
     string drive;
 public:
+    void buildCPU(string CPU);
+    void buildMonterBoard(string motherBoard);
+    void buildVideoCard(string VideoCard);
     void buildRAM(string RAM);
-    void buildMonterBoard(string MotherBoard);
-    void buildVideoCard(string VideoCard)
+    void buildHDD(string HDD);
+    void buildBox(string box);
+    void buildAudioBoard(string audioBoard);
+    void buildDrive(string drive);
 };
 
 
