@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 
+#include "Computer.h"
+
 using namespace std;
 
 
@@ -17,15 +19,17 @@ class ComputerBuilder {
     string box;
     string audioBoard;
     string drive;
+
 public:
     void buildCPU(string CPU);
-    void buildMonterBoard(string motherBoard);
+    void buildMontherBoard(string motherBoard);
     void buildVideoCard(string VideoCard);
     void buildRAM(string RAM);
     void buildHDD(string HDD);
     void buildBox(string box);
     void buildAudioBoard(string audioBoard);
     void buildDrive(string drive);
+    Computer &build();
 };
 
 

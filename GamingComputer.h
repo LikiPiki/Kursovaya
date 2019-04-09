@@ -1,0 +1,10 @@
+#ifndef CURSOVAYA_GAMINGCOMPUTER_H
+#define CURSOVAYA_GAMINGCOMPUTER_H
+
+
+class GamingComputer {
+
+};
+
+
+#endif //CURSOVAYA_GAMINGCOMPUTER_H
