@@ -1,5 +1,10 @@
 
 #include "Computer.h"
+#include "json.hpp"
+
+#define SPACING 4
+
+using json = nlohmann::json;
 
 Computer &Computer::CreateComputer() {
     auto *computer = new Computer();
@@ -80,4 +85,16 @@ const string &Computer::getDrive() const {
 
 void Computer::setDrive(const string &drive) {
     Computer::drive = drive;
+}
+
+void Computer::writeToFile(string filename) {
+    json j;
+    j["box"] = this->box;
+    j["HDD"] = this->HDD;
+    j["RAM"] = this->RAM;
+    j["VideoCard"] = this->videoCard;
+    j["motherBoard"] = this->motherBoard;
+    j["CPU"] = this->CPU;
+    j["drive"] = this->drive;
+    cout << j.dump(SPACING) << endl;
 }

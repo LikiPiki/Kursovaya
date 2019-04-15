@@ -18,6 +18,8 @@ class Computer {
     string audioBoard;
     string drive;
 public:
+    void writeToFile(string filename);
+
     const string &getCPU() const;
 
     void setCPU(const string &CPU);
