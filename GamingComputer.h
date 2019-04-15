@@ -1,9 +1,11 @@
 #ifndef CURSOVAYA_GAMINGCOMPUTER_H
 #define CURSOVAYA_GAMINGCOMPUTER_H
 
+#include "Computer.h"
 
-class GamingComputer {
-
+class GamingComputer : public Computer {
+public:
+    Computer &CreateComputer() override;
 };
 
 

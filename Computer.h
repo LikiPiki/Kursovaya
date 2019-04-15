@@ -50,7 +50,7 @@ public:
 
     void setDrive(const string &drive);
 
-    Computer &CreateComputer();
+    virtual Computer &CreateComputer();
     Computer();
 };
 
