@@ -5,7 +5,7 @@
 int main() {
 
     OfficeComputer *comp = new OfficeComputer();
-    comp->CreateComputer().writeToFile("hello.json");
+    comp->CreateComputer().writeToFile("office.json");
 
     return 0;
 }

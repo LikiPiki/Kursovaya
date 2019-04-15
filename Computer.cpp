@@ -1,4 +1,6 @@
 
+#include <fstream>
+
 #include "Computer.h"
 #include "json.hpp"
 
@@ -97,4 +99,8 @@ void Computer::writeToFile(string filename) {
     j["CPU"] = this->CPU;
     j["drive"] = this->drive;
     cout << j.dump(SPACING) << endl;
+    ofstream file;
+    file.open("../computers/" + filename);
+    file << j.dump(SPACING);
+    file.close();
 }
