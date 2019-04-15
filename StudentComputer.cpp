@@ -1,6 +1,3 @@
-//
-// Created by Сергей Баталев on 15/04/2019.
-//
 
 #include "StudentComputer.h"
 #include "ComputerBuilder.h"

@@ -79,7 +79,7 @@ void readComputerFromfile(string &filename, string *text) {
     string line;
     // check if file not opened
     if (file.fail()) {
-        cerr << "Error opening a file" << endl;
+        cerr << "Файл не удолась прочитать" << endl;
         return;
     }
 
