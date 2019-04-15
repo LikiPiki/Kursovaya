@@ -13,5 +13,7 @@ Computer &OfficeComputer::CreateComputer() {
     cb->buildMontherBoard("Gigabyte");
     cb->buildHDD("Seageate 512MB");
     cb->buildRAM("Samsung 2GB");
+    cb->buildAudioBoard("None");
+    cb->buildVideoCard("None");
     return cb->build();
 }

@@ -13,5 +13,6 @@ Computer &StudentComputer::CreateComputer() {
     cb->buildMontherBoard("Asus");
     cb->buildHDD("WD 1Tb");
     cb->buildRAM("Patriot 2Gb");
+    cb->buildAudioBoard("None");
     return cb->build();
 }

@@ -94,13 +94,33 @@ void Computer::writeToFile(string filename) {
     j["box"] = this->box;
     j["HDD"] = this->HDD;
     j["RAM"] = this->RAM;
-    j["VideoCard"] = this->videoCard;
+    j["videoCard"] = this->videoCard;
     j["motherBoard"] = this->motherBoard;
     j["CPU"] = this->CPU;
     j["drive"] = this->drive;
+    j["audioBoard"] = this->audioBoard;
     cout << j.dump(SPACING) << endl;
     ofstream file;
     file.open("../computers/" + filename);
     file << j.dump(SPACING);
     file.close();
+}
+
+void Computer::fromJsonString(string jsonText) {
+    json j = json::parse(jsonText);
+    this->box = string(j["box"]);
+    this->CPU = string(j["CPU"]);
+    this->HDD = string(j["HDD"]);
+    this->RAM = string(j["RAM"]);
+    this->videoCard = string(j["videoCard"]);
+    this->motherBoard = string(j["motherBoard"]);
+    this->drive = string(j["drive"]);
+    this->audioBoard = string(j["audioBoard"]);
+}
+
+ostream &operator<<(ostream &os, const Computer &computer) {
+    os << "CPU: " << computer.CPU << " Материнская плата: " << computer.motherBoard << " Видеокарта: " << computer.videoCard
+       << " RAM: " << computer.RAM << " HDD: " << computer.HDD << " Корпус: " << computer.box << " аудиокарта: "
+       << computer.audioBoard << " drive: " << computer.drive << "\n";
+    return os;
 }

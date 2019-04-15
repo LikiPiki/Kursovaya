@@ -9,5 +9,7 @@ Computer &GamingComputer::CreateComputer() {
     cb->buildMontherBoard("ASROCK");
     cb->buildHDD("Samsung 1Tb SSD");
     cb->buildRAM("Samsung 32GB");
+    cb->buildVideoCard("NVIDIA GTX 1080");
+    cb->buildAudioBoard("Game audio pro board");
     return cb->build();
 }

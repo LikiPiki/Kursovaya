@@ -54,6 +54,10 @@ public:
 
     virtual Computer &CreateComputer();
     Computer();
+
+    void fromJsonString(string jsonText);
+
+    friend ostream &operator<<(ostream &os, const Computer &computer);
 };
 
 
